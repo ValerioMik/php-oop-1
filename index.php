@@ -47,7 +47,7 @@
 
         public function getFullTitle(){
             if ($this->sottotitolo){
-                return $this->titolo.":". $this->sottotitolo;
+                return $this->titolo." : ". $this->sottotitolo;
             }else{
                return $this->titolo;
             }
@@ -55,9 +55,9 @@
 
         public function __toString(){
            if ($this->registra){
-               return $this->getFullTitle()."|".$this->registra;
+               return $this->getFullTitle()." | ".$this->registra;
            }else{
-               return $this->getFullTitle()."|"."???";
+               return $this->getFullTitle()." | "."???";
            }
         }
     }
